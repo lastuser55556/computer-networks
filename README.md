@@ -10,4 +10,4 @@
 
 ## Конспекты
 
-- [Виртуальная память: сегментная и страничная архитектуры](notes/virtual-memory/README.md)
+- [Краткая выжимка: TCP и UDP](notes/tcp-udp/README.md)
