@@ -8,6 +8,7 @@
 - [IPv4 адресация и разделение на подсети](labs/ipv4-subnetting/README.md)
 - [Сеть в Cisco Packet Tracer](labs/cisco-switch-hub-network/README.md)
 - [Анализ TCP и UDP в Wireshark](labs/wireshark-tcp-udp/README.md)
+- [Настройка DNS-сервера в Cisco Packet Tracer](labs/dns-server/README.md)
 
 ## Конспекты
 
