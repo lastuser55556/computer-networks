@@ -1,3 +1,7 @@
 # MAC-адреса и коммутаторы
 
-[Открыть схему](mac_switch_scheme.drawio) в diagrams.net.
+[Готовая схема PNG](mac_switch_scheme.png)
+
+[Редактируемая схема diagrams.net](mac_switch_scheme.drawio)
+
+На рисунке показаны структура MAC-адреса, соединение четырёх ПК через два коммутатора и пример ошибки: порт коммутатора выключен. Проверка — `show interfaces status`; включение нужного интерфейса — `no shutdown`.
