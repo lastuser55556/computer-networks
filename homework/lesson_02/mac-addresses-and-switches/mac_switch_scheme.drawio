@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-09-28T10:22:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="page1" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="790" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title1" value="MAC-адрес (48 бит / 6 байт)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="720" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mac" value="00 : 1A : 2B : 3C : 4D : 5E" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1;fillColor=#eaf2f8;strokeColor=#5b9bd5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="100" width="520" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="oui" value="00 : 1A : 2B&#10;OUI" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="190" width="230" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" value="3C : 4D : 5E&#10;Устройство" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="250" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="mac" target="oui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="mac" target="dev">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="title2" value="Соединение ПК через коммутаторы" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="1080" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pc1" value="ПК 1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="90" y="400" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pc2" value="ПК 2" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="90" y="540" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sw1" value="Коммутатор 1" style="shape=mxgraph.cisco.switches.workgroup_switch;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sw2" value="Коммутатор 2" style="shape=mxgraph.cisco.switches.workgroup_switch;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="620" y="450" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pc3" value="ПК 3" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="880" y="400" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pc4" value="ПК 4" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="880" y="540" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="pc1" target="sw1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="pc2" target="sw1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="sw1" target="sw2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#b85450;strokeWidth=3;dashed=1;" edge="1" parent="1" source="sw2" target="pc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="sw2" target="pc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err" value="Ошибка: порт к ПК 3 выключен" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="95" y="675" width="435" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="fix" value="Исправление: включить порт командой no shutdown" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="560" y="675" width="540" height="66" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
